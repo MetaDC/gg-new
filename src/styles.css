@@ -1,0 +1,239 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-magenta: var(--magenta);
+  --color-magenta-deep: var(--magenta-deep);
+  --color-orange-team: var(--orange-team);
+  --color-blue-team: var(--blue-team);
+
+  --font-display: "Bebas Neue", "Oswald", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand: Grooming Gurus logo — deep teal + crimson + gold on cream */
+  --background: oklch(0.22 0.05 200); /* deep teal-navy */
+  --foreground: oklch(0.985 0.01 90);
+
+  --card: oklch(0.27 0.06 200);
+  --card-foreground: oklch(0.985 0.01 90);
+
+  --popover: oklch(0.27 0.06 200);
+  --popover-foreground: oklch(0.985 0.01 90);
+
+  --primary: oklch(0.55 0.19 22); /* crimson red from barber pole */
+  --primary-foreground: oklch(0.99 0.01 90);
+
+  --secondary: oklch(0.5 0.09 200); /* teal */
+  --secondary-foreground: oklch(0.99 0.01 90);
+
+  --muted: oklch(0.32 0.05 200);
+  --muted-foreground: oklch(0.78 0.02 90);
+
+  --accent: oklch(0.78 0.13 80); /* laurel gold */
+  --accent-foreground: oklch(0.18 0.05 200);
+
+  --destructive: oklch(0.55 0.19 22);
+  --destructive-foreground: oklch(0.99 0.01 90);
+
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.55 0.19 22);
+
+  --gold: oklch(0.78 0.13 80); /* laurel gold */
+  --gold-foreground: oklch(0.18 0.05 200);
+  --navy: oklch(0.27 0.06 200);
+  --navy-deep: oklch(0.16 0.04 200);
+  --magenta: oklch(0.55 0.19 22); /* alias → crimson */
+  --magenta-deep: oklch(0.42 0.18 22);
+  --orange-team: oklch(0.6 0.18 28);
+  --blue-team: oklch(0.5 0.09 200); /* teal */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, oklch(0.6 0.19 22), oklch(0.42 0.18 22));
+  --gradient-gold: linear-gradient(135deg, oklch(0.86 0.13 88), oklch(0.7 0.14 70));
+  --gradient-sunset: linear-gradient(135deg, oklch(0.78 0.13 80), oklch(0.55 0.19 22));
+  --gradient-hero: linear-gradient(180deg, oklch(0.16 0.04 200 / 0.55), oklch(0.16 0.04 200 / 0.95));
+  --gradient-orange: linear-gradient(135deg, oklch(0.7 0.16 50), oklch(0.55 0.19 22));
+  --gradient-blue: linear-gradient(135deg, oklch(0.55 0.1 200), oklch(0.32 0.07 200));
+  --gradient-confetti: conic-gradient(from 180deg, oklch(0.55 0.19 22), oklch(0.78 0.13 80), oklch(0.5 0.09 200), oklch(0.99 0.01 90), oklch(0.55 0.19 22));
+
+  /* Shadows */
+  --shadow-primary: 0 20px 60px -20px oklch(0.55 0.19 22 / 0.55);
+  --shadow-gold: 0 20px 60px -20px oklch(0.78 0.13 80 / 0.5);
+  --shadow-card: 0 24px 60px -24px oklch(0 0 0 / 0.65);
+  --shadow-glow: 0 0 80px -10px oklch(0.78 0.13 80 / 0.4);
+
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+  /* Same as root — site is dark by default */
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  /* Light section: inverts background/foreground/muted/card so child components
+     using semantic tokens automatically render in a light palette. */
+  .section-light {
+    --background: oklch(0.985 0.012 90); /* warm cream */
+    --foreground: oklch(0.22 0.05 200);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.22 0.05 200);
+    --muted: oklch(0.95 0.02 85);
+    --muted-foreground: oklch(0.42 0.06 200);
+    --border: oklch(0.22 0.05 200 / 14%);
+    --input: oklch(0.22 0.05 200 / 14%);
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-primary {
+    background: var(--gradient-sunset);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gradient-primary { background: var(--gradient-primary); }
+  .bg-gradient-sunset { background: var(--gradient-sunset); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-orange { background: var(--gradient-orange); }
+  .bg-gradient-blue { background: var(--gradient-blue); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+
+  .shadow-primary { box-shadow: var(--shadow-primary); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-card-elevated { box-shadow: var(--shadow-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .container-page {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+    max-width: 80rem;
+  }
+
+  /* Cricket-ball comet streak (IPL-style): a tapered gradient trail ending
+     in a solid ball. Set --ball-color on the element to control color. */
+  .streak {
+    position: absolute;
+    width: 280px;
+    height: 22px;
+    pointer-events: none;
+    transform-origin: right center;
+  }
+  /* The tapered trail */
+  .streak::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    right: 22px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      color-mix(in oklab, var(--ball-color) 25%, transparent) 35%,
+      color-mix(in oklab, var(--ball-color) 65%, transparent) 70%,
+      var(--ball-color) 100%
+    );
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 55%);
+    border-radius: 999px 0 0 999px;
+    filter: blur(1px);
+  }
+  /* The ball at the head of the trail */
+  .streak::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle at 32% 32%,
+        color-mix(in oklab, white 55%, var(--ball-color)) 0%,
+        var(--ball-color) 55%,
+        color-mix(in oklab, black 25%, var(--ball-color)) 100%);
+    transform: translateY(-50%);
+    box-shadow:
+      0 0 24px color-mix(in oklab, var(--ball-color) 60%, transparent),
+      inset -3px -3px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2") format("woff2");
+  font-display: swap;
+}
