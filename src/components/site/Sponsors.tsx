@@ -58,19 +58,22 @@ export function Sponsors() {
 
       <div className="container-page relative">
         {/* Co-Sponsored | Powered By */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto mb-14 px-4">
           {[
             { s: "CO-SPONSORED BY", n: "", logo: cosponsored1 },
-            { s: "POWERED BY", n: "SILK",logo: poweredby1 },
+            { s: "POWERED BY", n: "SILK", logo: poweredby1 },
           ].map((p) => (
-            <div key={p.s} className="text-center">
-              <p className="text-[11px] sm:text-xs tracking-[0.35em] font-bold text-navy-deep mb-3">
+            <div key={p.s} className="flex flex-col items-center text-center">
+              <p className="text-[11px] sm:text-xs tracking-[0.4em] font-bold text-navy-deep mb-4 uppercase">
                 {p.s}
               </p>
-              <LogoTile name={p.n} logo={p.logo}/>
+              <div className="w-full max-w-[300px]">
+                <LogoTile name={p.n} logo={p.logo} />
+              </div>
             </div>
           ))}
         </div>
+
 
         <div className="mx-auto mb-10 h-px max-w-5xl bg-navy/10" />
 
