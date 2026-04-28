@@ -15,18 +15,26 @@ type Team = {
 
 // Colors sampled from the AMINU x 3TENX jersey reference image
 const teams: Team[] = [
+  
   { name: "Frenyz Salon", city: "Vadodara",  captain: "Freny",   jerseyNo: "01", bg: "#E6188E", fg: "#FFFFFF", photo: salonStrikersPhoto },
-  { name: "Frenyz Salon", city: "Bengaluru", captain: "Probal",  jerseyNo: "02", bg: "#0A0A0A", fg: "#FFFFFF", photo: onyxEdgePhoto },
-  { name: "Frenyz Salon", city: "Mumbai",    captain: "Manish",  jerseyNo: "03", bg: "#E0241F", fg: "#FFFFFF" },
-  { name: "Frenyz Salon", city: "Surat",     captain: "Anil",    jerseyNo: "04", bg: "#F2D900", fg: "#0A0A0A" },
-  { name: "Frenyz Salon", city: "Vadodara",  captain: "Nitin",   jerseyNo: "05", bg: "#1F2A4A", fg: "#FFFFFF" },
-  { name: "Frenyz Salon", city: "Pune",      captain: "Paresh",  jerseyNo: "06", bg: "#A6D8B0", fg: "#0A0A0A", photo: mintMavericksPhoto },
-  { name: "Frenyz Salon", city: "Surat",     captain: "Dev",     jerseyNo: "07", bg: "#F08A1C", fg: "#FFFFFF" },
-  { name: "Frenyz Salon", city: "Ahmedabad", captain: "Raj",     jerseyNo: "08", bg: "#C9CCCE", fg: "#0A0A0A" },
-  { name: "Frenyz Salon", city: "Chennai",   captain: "Bhavesh", jerseyNo: "09", bg: "#7B96B8", fg: "#0A0A0A" },
-  { name: "Frenyz Salon", city: "Delhi",     captain: "Karan",   jerseyNo: "10", bg: "#4B1F7A", fg: "#FFFFFF" },
-  { name: "Frenyz Salon", city: "Jaipur",    captain: "Alpit",   jerseyNo: "11", bg: "#B49A86", fg: "#0A0A0A" },
-  { name: "Frenyz Salon", city: "Kolkata",   captain: "Chirag",  jerseyNo: "12", bg: "#1F5FB8", fg: "#FFFFFF" },
+  { name: "Allure And Beard Studio", city: "Bengaluru", captain: "Probal",  jerseyNo: "02", bg: "#0A0A0A", fg: "#FFFFFF", photo: onyxEdgePhoto },
+     { name: "New Look Salon", city: "Pune",      captain: "Paresh",  jerseyNo: "03", bg: "#A6D8B0", fg: "#0A0A0A", photo: mintMavericksPhoto },
+   { name: "Jawed Habib Hair & Beauty", city: "Mumbai",    captain: "Manish",  jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF" },
+  { name: "Elixir Salon", city: "Surat",     captain: "Anil",    jerseyNo: "05", bg: "#F2D900", fg: "#0A0A0A" },
+  { name: "Nitin's The Professional Salon", city: "Vadodara",  captain: "Nitin",   jerseyNo: "06", bg: "#1F2A4A", fg: "#FFFFFF" },
+ 
+  { name: "Dev's Ladies Salon", city: "Surat",     captain: "Dev",     jerseyNo: "07", bg: "#F08A1C", fg: "#FFFFFF" },
+  { name: "Reflexions Unisex Salon", city: "Ahmedabad", captain: "Raj",     jerseyNo: "08", bg: "#C9CCCE", fg: "#0A0A0A" },
+  { name: "Shweta's Makeover", city: "Chennai",   captain: "Bhavesh", jerseyNo: "09", bg: "#7B96B8", fg: "#0A0A0A" },
+{ name: "Cutz Beauty Salon", city: "Delhi",     captain: "Karan",   jerseyNo: "10", bg: "#4B1F7A", fg: "#FFFFFF" },
+  
+  { name: "Rutpit The Alpit Sharma Salon", city: "Jaipur",    captain: "Alpit",   jerseyNo: "11", bg: "#B49A86", fg: "#0A0A0A" },
+  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag",  jerseyNo: "12", bg: "#1F5FB8", fg: "#FFFFFF" },
+  
+
+
+
+
 ];
 
 function TeamCard({ team }: { team: Team }) {

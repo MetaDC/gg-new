@@ -95,12 +95,14 @@ export function Sponsors() {
           {([
             { n: "", s: "UMPIRE SUPPORT PARTNER",logo: umpire },
             { n: "", s: "ASSOCIATE PARTNER",logo: associate1 },
-            { n: "", s: "BEVERAGE PARTNER",logo: beverages2 },
+               { n: "Logo 1", s: "ASSOCIATE PARTNER",},
+            // { n: "", s: "BEVERAGE PARTNER",logo: beverages2 },
             { n: "", s: "BEVERAGE PARTNER",logo: beverages1 },
             { n: "", s: "TRAVEL CURATOR PARTNER",logo: travel },
             { n: "Diwizon", s: "TECH PARTNER", logo: diwizonLogo },
             { n: "LOGO 7", s: "DIGITAL PARTNER", logo: digitales },
-            // { n: "LOGO 8", s: "ENTERTAINMENT PARTNER" },
+       
+            { n: "LOGO 2", s: "ENTERTAINMENT PARTNER" },
           ] as { n: string; s: string; logo?: string; href?: string }[]).map((p) => {
             const href = p.n === "Diwizon" ? "https://diwizon.com/" : p.href;
             return (
