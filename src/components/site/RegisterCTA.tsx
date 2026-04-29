@@ -15,7 +15,7 @@ export function RegisterCTA() {
         </div>
 
         <p className="mt-5 text-muted-foreground max-w-2xl mx-auto text-lg">
-          The 2026 season is fully booked. Be the first in line for Grooming Gurus 2027 — squads of 8–15 players, 8 on the field, one day of glory in Vadodara.
+          The 2026 season is fully booked. Be the first in line for Grooming Gurus 2027 squads of 8–15 players, 8 on the field, one day of glory in Vadodara.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

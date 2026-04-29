@@ -1,4 +1,4 @@
-import teamPhoto from "@/assets/team-photo.jpg";
+import teamPhoto from "@/assets/team-photo.webp";
 
 export function About() {
   return (
@@ -37,7 +37,7 @@ export function About() {
                 {[
                   ["Format", "Box Cricket"],
                   ["Squad size", "8 – 15 players"],
-                  ["Playing XI", "8 on field"],
+                  ["Playing", "8 on field"],
                   ["Location", "Vadodara"],
                 ].map(([k, v]) => (
                   <li key={k} className="flex items-center justify-between border-b border-border pb-3 last:border-0 last:pb-0">

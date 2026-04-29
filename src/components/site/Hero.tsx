@@ -35,7 +35,7 @@ export function Hero() {
           2026 Registrations Closed
         </div>
         <p className="mt-6 max-w-xl mx-auto text-base sm:text-lg text-muted-foreground">
-          Where the salon industry meets the cricket pitch. Registrations for 2026 are now closed — but you can secure your spot for the 2027 edition today.
+          Where the salon industry meets the cricket pitch. Registrations for 2026 are now closed but you can secure your spot for the 2027 edition today.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
           <a
@@ -56,7 +56,7 @@ export function Hero() {
           {[
             { v: "11+", l: "Teams" },
             { v: "150+", l: "Players" },
-            { v: "1 Day", l: "Of Glory" },
+            { v: "15+", l: "Sponsors" },
           ].map((s) => (
             <div key={s.l} className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-4">
               <div className="font-display text-3xl text-gradient-primary">{s.v}</div>

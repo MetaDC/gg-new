@@ -13,7 +13,7 @@ import beverages1 from "@/assets/sponsor/bevragepartner/jkagency.png";
 import beverages2 from "@/assets/sponsor/bevragepartner/kb.png";
 import travel from "@/assets/sponsor/travelcuratorpartner/Tripotel.png";
 import digitales from "@/assets/sponsor/digitalpartner/gs.png";
-// import entertainment from "@/assets/sponsor/";
+import entertainment from "@/assets/sponsor/entertainment/vc-live-logo.png";
 import diwizonLogo from "@/assets/sponsors/diwizon.png";
 
 function LogoTile({ name, sub, logo }: { name: string; sub?: string; logo?: string }) {
@@ -93,16 +93,16 @@ export function Sponsors() {
         {/* Associate partners */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {([
-            { n: "", s: "UMPIRE SUPPORT PARTNER",logo: umpire },
-            { n: "", s: "ASSOCIATE PARTNER",logo: associate1 },
-               { n: "Logo 1", s: "ASSOCIATE PARTNER",},
-            // { n: "", s: "BEVERAGE PARTNER",logo: beverages2 },
-            { n: "", s: "BEVERAGE PARTNER",logo: beverages1 },
-            { n: "", s: "TRAVEL CURATOR PARTNER",logo: travel },
+            { n: "UMPIRE SUPPORT PARTNER", s: "UMPIRE SUPPORT PARTNER",logo: umpire },
+            { n: "ASSOCIATE PARTNER", s: "ASSOCIATE PARTNER",logo: associate1 },
+              //  { n: "Logo 1", s: "ASSOCIATE PARTNER",},
+            { n: "BEVERAGE PARTNER", s: "BEVERAGE PARTNER",logo: beverages2 },
+            { n: "BEVERAGE PARTNER", s: "BEVERAGE PARTNER",logo: beverages1 },
+            { n: "TRAVEL CURATOR PARTNER", s: "TRAVEL CURATOR PARTNER",logo: travel },
             { n: "Diwizon", s: "TECH PARTNER", logo: diwizonLogo },
-            { n: "LOGO 7", s: "DIGITAL PARTNER", logo: digitales },
+            { n: "DIGITAL PARTNER", s: "DIGITAL PARTNER", logo: digitales },
        
-            { n: "LOGO 2", s: "ENTERTAINMENT PARTNER" },
+            { n: "ENTERTAINMENT PARTNER", s: "ENTERTAINMENT PARTNER",logo: entertainment },
           ] as { n: string; s: string; logo?: string; href?: string }[]).map((p) => {
             const href = p.n === "Diwizon" ? "https://diwizon.com/" : p.href;
             return (

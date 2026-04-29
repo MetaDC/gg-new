@@ -34,10 +34,10 @@ export function TitleSponsor() {
             Title Sponsor
           </div>
           <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl text-foreground">
-            Powered By <span className="text-gradient-gold">3TENX</span>
+       <span className="text-gradient-gold">3TENX</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground">
-            Proud title sponsor of Grooming Gurus Cricket Tournament — championing
+            Proud title sponsor of Grooming Gurus Cricket Tournament championing
             the salon industry on and off the pitch.
           </p>
         </div>

@@ -5,7 +5,7 @@ import logo from "@/assets/gg-logo.webp";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
-  { href: "#sponsors", label: "Sponsors" },
+  { href: "#title-sponsor", label: "Sponsors" },
   { href: "#highlights", label: "Highlights" },
   { href: "#gallery", label: "Gallery" },
   { href: "#contact", label: "Contact" },

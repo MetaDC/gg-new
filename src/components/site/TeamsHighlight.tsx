@@ -1,7 +1,6 @@
-import captainPhoto from "@/assets/cricketer-silhouette.png";
-import mintMavericksPhoto from "@/assets/teams/mint-mavericks.png";
-import onyxEdgePhoto from "@/assets/teams/onyx-edge.png";
-import salonStrikersPhoto from "@/assets/teams/salon-strikers.png";
+const captainPhoto = "/cricketer-silhouette.webp";
+
+
 
 type Team = {
   name: string;
@@ -30,29 +29,18 @@ type Team = {
 
 // Colors sampled from the AMINU x 3TENX jersey reference image
 const teams: Team[] = [
-
-  { name: "Allure And Beard Studio", city: "Bengaluru", captain: "Probal Sen",  jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: onyxEdgePhoto },
-  { name: "Frenyz Couture and Salon", city: "Vadodara",  captain: "Freny Chauhan",   jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: salonStrikersPhoto },
-  { name: "Reflexions Unisex Salon", city: "Ahmedabad", captain: "Raj Sen",     jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A" },
-  { name: "Jawed Habib Hair & Beauty", city: "Mumbai",    captain: "Manish Makhija",  jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF" },
-  { name: "Shweta's Makeover", city: "Chennai",   captain: "Bhavesh Panchal", jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A" },
-  { name: "Cutz Beauty Salon", city: "Delhi",     captain: "Megha Bhatti",   jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF" },
-  { name: "Elixir Salon", city: "Surat",     captain: "Anil Sitapara",    jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A" },
-  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag Limbachiya",  jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF" },
-   { name: "Rutpit The Alpit Sharma Salon", city: "Jaipur",    captain: "Alpit Sharma",   jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" },
-{ name: "Dev's Ladies Salon", city: "Surat",     captain: "Devang Kalola",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF" },
-     { name: "New Look Salon", city: "Pune",      captain: "Paresh Lakhtariya",  jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: mintMavericksPhoto },
-  { name: "Nitin's The Professional Salon", city: "Vadodara",  captain: "Nitin Limbachiya",   jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF" },
- 
-  
-
-
-  
-
-  
-
-
-
+  { name: "Allure And Beard Studio",               city: "Bengaluru", captain: "Probal Sen",        jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: "/teams/probal-sen.webp" },
+  { name: "Frenyz Couture and Salon",              city: "Vadodara",  captain: "Freny Chauhan",     jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: "/teams/freny-chauhan.webp" },
+  { name: "Reflexions Unisex Salon",               city: "Ahmedabad", captain: "Raj Sen",           jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A", photo: "/teams/raj-sen.webp" },
+  { name: "Jawed Habib Hair & Beauty",             city: "Mumbai",    captain: "Manish Makhija",    jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF", photo: "/teams/manish-makhija.webp" },
+  { name: "Shweta's Makeover",                     city: "Chennai",   captain: "Bhavesh Panchal",   jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A", photo: "/teams/bhavesh-panchal.webp" },
+  { name: "Cutz Beauty Salon",                     city: "Delhi",     captain: "Megha Bhatti",      jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF", photo: "/teams/megha-bhatti.webp" },
+  { name: "Elixir Salon",                          city: "Surat",     captain: "Anil Sitapara",     jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A", photo: "/teams/anil-sitapara.webp" },
+  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag Limbachiya", jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF", photo: "/teams/chirag-limbachiya.webp" },
+  { name: "Rutpit The Alpit Sharma Salon",         city: "Jaipur",    captain: "Alpit Sharma",      jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" ,  photo: "/teams/4.webp" },
+  { name: "Dev's Ladies Salon",                    city: "Surat",     captain: "Devang Kalola",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF", photo: "/teams/devang-kalola.webp" },
+  { name: "New Look Salon",                        city: "Pune",      captain: "Paresh Lakhtariya", jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: "/teams/paresh-lakhtariya.webp" },
+  { name: "Nitin's The Professional Salon",        city: "Vadodara",  captain: "Nitin Limbachiya",  jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF", photo: "/teams/nitin-limbachiya.webp" },
 
 ];
 
@@ -85,16 +73,23 @@ function TeamCard({ team }: { team: Team }) {
         }}
       />
 
-      {/* Player photo (left) */}
-      <img
-        src={team.photo ?? captainPhoto}
-        alt={`${team.captain}, captain of ${team.name}`}
-        loading="lazy"
-        width={512}
-        height={768}
-        className="absolute left-0 bottom-0 h-[110%] w-auto object-contain object-bottom drop-shadow-2xl pointer-events-none select-none"
-        style={{ maxWidth: "45%" }}
-      />
+     <img
+  src={team.photo ?? captainPhoto}
+  alt={`${team.captain}, captain of ${team.name}`}
+  loading="lazy"
+  decoding="async"
+  width={300}
+  height={450}
+  className="
+    absolute left-0 bottom-0
+    h-[110%] w-auto
+    object-cover sm:object-contain
+    object-bottom
+    drop-shadow-2xl
+    pointer-events-none select-none
+  "
+  style={{ maxWidth: "40%" }}
+/>
 
       {/* Right side info */}
       <div className="relative h-full ml-[42%] pr-5 py-4 flex flex-col justify-center">
@@ -121,13 +116,13 @@ function TeamCard({ team }: { team: Team }) {
         {/* Stats */}
         <div className="mt-2 space-y-1 text-[12px]">
           <div className="flex items-center gap-3">
-            <span className="font-semibold w-16" style={{ color: faint }}>Owner</span>
+            {/* <span className="font-semibold w-16" style={{ color: faint }}>Owner</span> */}
             <span className="font-bold" style={{ color: subtle }}>{team.captain}</span>
           </div>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <span className="font-semibold w-16" style={{ color: faint }}>City</span>
             <span className="font-bold" style={{ color: subtle }}>{team.city}</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Pagination dots (decorative, IPL-style) */}
