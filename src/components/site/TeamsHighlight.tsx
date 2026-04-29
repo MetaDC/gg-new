@@ -13,23 +13,42 @@ type Team = {
   photo?: string;
 };
 
+// * Allure And Beard Studio: PROBAL SEN
+// * ⁠FRENYZ COUTURE AND SALON : Freny Chauhan
+// * ⁠Reflexions Unisex Salon: RAJ SEN
+// * ⁠Jawed Habib Hair & Beauty : MANISH MAKHIJA
+// * ⁠Shweta's Makeover: BHAVESH PANCHAL
+// * ⁠* Cutz Beauty Salon: MEGHA BHATTI
+// * ⁠* Elixir Salon: ANIL SITAPARA
+// * ⁠* Beyound Beauty Unisex Salon & Academy: CHIRAG LIMBACHIYA
+// * ⁠* Rutpit The Alpit Sharma Salon* ALPIT SHARMA
+// * Dev's Ladies Salon : DEVANG KALOLA ⁠
+// * * New Look Salon:PARESH LAKHTARIYA⁠
+// * * Nitin's The Professional Salon: NITIN LIMBACHIYA
+
+
+
 // Colors sampled from the AMINU x 3TENX jersey reference image
 const teams: Team[] = [
-  
-  { name: "Frenyz Salon", city: "Vadodara",  captain: "Freny",   jerseyNo: "01", bg: "#E6188E", fg: "#FFFFFF", photo: salonStrikersPhoto },
-  { name: "Allure And Beard Studio", city: "Bengaluru", captain: "Probal",  jerseyNo: "02", bg: "#0A0A0A", fg: "#FFFFFF", photo: onyxEdgePhoto },
-     { name: "New Look Salon", city: "Pune",      captain: "Paresh",  jerseyNo: "03", bg: "#A6D8B0", fg: "#0A0A0A", photo: mintMavericksPhoto },
-   { name: "Jawed Habib Hair & Beauty", city: "Mumbai",    captain: "Manish",  jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF" },
-  { name: "Elixir Salon", city: "Surat",     captain: "Anil",    jerseyNo: "05", bg: "#F2D900", fg: "#0A0A0A" },
-  { name: "Nitin's The Professional Salon", city: "Vadodara",  captain: "Nitin",   jerseyNo: "06", bg: "#1F2A4A", fg: "#FFFFFF" },
+
+  { name: "Allure And Beard Studio", city: "Bengaluru", captain: "Probal Sen",  jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: onyxEdgePhoto },
+  { name: "Frenyz Couture and Salon", city: "Vadodara",  captain: "Freny Chauhan",   jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: salonStrikersPhoto },
+  { name: "Reflexions Unisex Salon", city: "Ahmedabad", captain: "Raj Sen",     jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A" },
+  { name: "Jawed Habib Hair & Beauty", city: "Mumbai",    captain: "Manish Makhija",  jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF" },
+  { name: "Shweta's Makeover", city: "Chennai",   captain: "Bhavesh Panchal", jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A" },
+  { name: "Cutz Beauty Salon", city: "Delhi",     captain: "Megha Bhatti",   jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF" },
+  { name: "Elixir Salon", city: "Surat",     captain: "Anil Sitapara",    jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A" },
+  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag Limbachiya",  jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF" },
+   { name: "Rutpit The Alpit Sharma Salon", city: "Jaipur",    captain: "Alpit Sharma",   jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" },
+{ name: "Dev's Ladies Salon", city: "Surat",     captain: "Devang Kalola",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF" },
+     { name: "New Look Salon", city: "Pune",      captain: "Paresh Lakhtariya",  jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: mintMavericksPhoto },
+  { name: "Nitin's The Professional Salon", city: "Vadodara",  captain: "Nitin Limbachiya",   jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF" },
  
-  { name: "Dev's Ladies Salon", city: "Surat",     captain: "Dev",     jerseyNo: "07", bg: "#F08A1C", fg: "#FFFFFF" },
-  { name: "Reflexions Unisex Salon", city: "Ahmedabad", captain: "Raj",     jerseyNo: "08", bg: "#C9CCCE", fg: "#0A0A0A" },
-  { name: "Shweta's Makeover", city: "Chennai",   captain: "Bhavesh", jerseyNo: "09", bg: "#7B96B8", fg: "#0A0A0A" },
-{ name: "Cutz Beauty Salon", city: "Delhi",     captain: "Karan",   jerseyNo: "10", bg: "#4B1F7A", fg: "#FFFFFF" },
   
-  { name: "Rutpit The Alpit Sharma Salon", city: "Jaipur",    captain: "Alpit",   jerseyNo: "11", bg: "#B49A86", fg: "#0A0A0A" },
-  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag",  jerseyNo: "12", bg: "#1F5FB8", fg: "#FFFFFF" },
+
+
+  
+
   
 
 
@@ -102,7 +121,7 @@ function TeamCard({ team }: { team: Team }) {
         {/* Stats */}
         <div className="mt-2 space-y-1 text-[12px]">
           <div className="flex items-center gap-3">
-            <span className="font-semibold w-16" style={{ color: faint }}>Captain</span>
+            <span className="font-semibold w-16" style={{ color: faint }}>Owner</span>
             <span className="font-bold" style={{ color: subtle }}>{team.captain}</span>
           </div>
           <div className="flex items-center gap-3">
