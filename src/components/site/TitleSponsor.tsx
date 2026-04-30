@@ -1,6 +1,6 @@
 // Title Sponsor — dedicated dark-themed hero section for 3TENX
 import { ArrowUpRight, Trophy, Sparkles } from "lucide-react";
-import tenxLogo from "@/assets/3tenx-logo.png";
+import tenxLogo from "@/assets/3tenx-logo.webp";
 
 function Streak({ className, color }: { className: string; color: string }) {
   return (
@@ -61,7 +61,7 @@ export function TitleSponsor() {
                   />
                 </div>
                 <p className="mt-4 text-xs tracking-[0.3em] text-gold/80 uppercase">
-                  Official Title Sponsor • 2026
+                  Where Science Meets Salon Excellence
                 </p>
               </div>
 
@@ -74,23 +74,22 @@ export function TitleSponsor() {
                       A Brand That Backs Bold
                     </h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      3TENX brings energy, vision, and unmatched support to make
-                      this tournament a celebration of style and sport.
+                    India’s first professional haircare brand, formulated in Italy, made for Indian hair, and trusted by 10,000+ stylists for salon-grade results from the first wash.
                     </p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div className="rounded-xl border border-border bg-card/50 p-4">
-                    <p className="text-2xl font-display text-gold">500+</p>
+                    <p className="text-2xl font-display text-gold">#3200+</p>
                     <p className="text-[11px] uppercase tracking-widest text-muted-foreground mt-1">
-                      Industry Partners
+                   Salon Partners 
                     </p>
                   </div>
                   <div className="rounded-xl border border-border bg-card/50 p-4">
                     <p className="text-2xl font-display text-gold">#1</p>
                     <p className="text-[11px] uppercase tracking-widest text-muted-foreground mt-1">
-                      Grooming Brand
+                     Professional Brand
                     </p>
                   </div>
                 </div>
