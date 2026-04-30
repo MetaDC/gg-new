@@ -1,14 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/gg-logo.webp";
+const logo = "/assets/gg-logo.webp";
 
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#title-sponsor", label: "Sponsors" },
-  { href: "#highlights", label: "Highlights" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "ABOUT" },
+  { href: "#title-sponsor", label: "SPONSORS" },
+  { href: "#highlights", label: "HIGHLIGHTS" },
+  { href: "#gallery", label: "GALLERY" },
+  { href: "#contact", label: "CONTACT" },
 ];
 
 export function Navbar() {
@@ -37,7 +37,7 @@ export function Navbar() {
             to="/register"
             className="hidden sm:inline-flex items-center justify-center rounded-full bg-gradient-sunset px-5 py-2 text-sm font-semibold text-white shadow-primary hover:scale-105 transition-transform"
           >
-            Register
+            REGISTER
           </Link>
 
           <button
@@ -70,7 +70,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex sm:hidden items-center justify-center rounded-full bg-gradient-sunset px-5 py-3 text-sm font-semibold text-white shadow-primary"
             >
-              Register
+              REGISTER
             </Link>
           </div>
         </nav>

@@ -1,6 +1,7 @@
 // Title Sponsor — dedicated dark-themed hero section for 3TENX
 import { ArrowUpRight, Trophy, Sparkles } from "lucide-react";
-import tenxLogo from "@/assets/3tenx-logo.webp";
+const tenxLogo = "/assets/3tenx-logo.png";
+const tenxProducts = "/assets/3tenx-products.png";
 
 function Streak({ className, color }: { className: string; color: string }) {
   return (
@@ -105,6 +106,23 @@ export function TitleSponsor() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+
+         {/* Product showcase */}
+        <div className="mt-12 mx-auto max-w-5xl">
+          <div className="relative rounded-3xl border border-gold/20 bg-gradient-to-br from-navy to-navy-deep p-4 sm:p-6 shadow-card-elevated overflow-hidden">
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+            <img
+              src={tenxProducts}
+              alt="3TENX product range — shampoos, conditioners, hair oils & serums"
+              className="relative w-full h-auto rounded-2xl object-cover"
+              loading="lazy"
+            />
+            <p className="relative mt-4 text-center text-xs tracking-[0.3em] text-gold/80 uppercase">
+              The Complete 3TENX Range
+            </p>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
-import g1 from "@/assets/1.webp";
-import g2 from "@/assets/2.webp";
-import g3 from "@/assets/6.webp";
-import g4 from "@/assets/4.webp";
-import g5 from "@/assets/3.webp";
-import g6 from "@/assets/5.webp";
+const g1 = "/assets/1.webp";
+const g2 = "/assets/2.webp";
+const g3 = "/assets/6.webp";
+const g4 = "/assets/4.webp";
+const g5 = "/assets/3.webp";
+const g6 = "/assets/5.webp";
 
 const items = [
   { src: g1, label: "TOURNAMENT ACTION" },

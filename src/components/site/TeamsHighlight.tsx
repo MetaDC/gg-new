@@ -1,4 +1,5 @@
 const captainPhoto = "/cricketer-silhouette.webp";
+import { Instagram } from "lucide-react";
 
 
 
@@ -10,6 +11,7 @@ type Team = {
   bg: string;
   fg: string;
   photo?: string;
+  ig: string;
 };
 
 // * Allure And Beard Studio: PROBAL SEN
@@ -27,20 +29,39 @@ type Team = {
 
 
 
+
+
+
+
+// https://www.instagram.com/allureandbeardstudio/
+// https://www.instagram.com/frenyzsalon/
+// https://www.instagram.com/reflexions_unisex_salon/
+// https://www.instagram.com/jawedhabibfatehgunj/
+// https://www.instagram.com/cutz_salon_/
+// https://www.instagram.com/elixirsalon.as/
+// https://www.instagram.com/beyound_beauty_unisex_salon/
+// https://www.instagram.com/rutpit_thealpitsharma_salon/
+// https://www.instagram.com/devs_ladiessalon_vadodara/
+// https://www.instagram.com/nitinstheprofessionalsalon/
+// https://www.instagram.com/the.newlooksalon/
+// https://www.instagram.com/shwetas_beauty_care_spa_/
+
+
+
 // Colors sampled from the AMINU x 3TENX jersey reference image
 const teams: Team[] = [
-  { name: "Allure And Beard Studio",               city: "Bengaluru", captain: "Probal Sen",        jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: "/teams/probal-sen.webp" },
-  { name: "Frenyz Couture and Salon",              city: "Vadodara",  captain: "Freny Chauhan",     jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: "/teams/freny-chauhan.webp" },
-  { name: "Reflexions Unisex Salon",               city: "Ahmedabad", captain: "Raj Sen",           jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A", photo: "/teams/raj-sen.webp" },
-  { name: "Jawed Habib Hair & Beauty",             city: "Mumbai",    captain: "Manish Makhija",    jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF", photo: "/teams/manish-makhija.webp" },
-  { name: "Shweta's Makeover",                     city: "Chennai",   captain: "Bhavesh Panchal",   jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A", photo: "/teams/bhavesh-panchal.webp" },
-  { name: "Cutz Beauty Salon",                     city: "Delhi",     captain: "Megha Bhatti",      jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF", photo: "/teams/megha-bhatti.webp" },
-  { name: "Elixir Salon",                          city: "Surat",     captain: "Anil Sitapara",     jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A", photo: "/teams/anil-sitapara.webp" },
-  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "Chirag Limbachiya", jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF", photo: "/teams/chirag-limbachiya.webp" },
-  { name: "Rutpit The Alpit Sharma Salon",         city: "Jaipur",    captain: "Alpit Sharma",      jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" ,  photo: "/teams/4.webp" },
-  { name: "Dev's Ladies Salon",                    city: "Surat",     captain: "Devang Kalola",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF", photo: "/teams/devang-kalola.webp" },
-  { name: "New Look Salon",                        city: "Pune",      captain: "Paresh Lakhtariya", jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: "/teams/paresh-lakhtariya.webp" },
-  { name: "Nitin's The Professional Salon",        city: "Vadodara",  captain: "Nitin Limbachiya",  jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF", photo: "/teams/nitin-limbachiya.webp" },
+  { name: "Allure And Beard Studio",               city: "Bengaluru", captain: "PROBAL SEN",        jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: "/teams/probal-sen.webp", ig: "https://www.instagram.com/allureandbeardstudio/" },
+  { name: "Frenyz Couture and Salon",              city: "Vadodara",  captain: "FRENY CHAUHAN",     jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: "/teams/freny-chauhan.webp", ig: "https://www.instagram.com/frenyzsalon/" },
+  { name: "Reflexions Unisex Salon",               city: "Ahmedabad", captain: "RAJ SEN",    jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A", photo: "/teams/raj-sen.webp", ig: "https://www.instagram.com/reflexions_unisex_salon/" },
+  { name: "Jawed Habib Hair & Beauty",             city: "Mumbai",    captain: "MANISH MAKHIJA",    jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF", photo: "/teams/manish-makhija.webp", ig: "https://www.instagram.com/jawedhabibfatehgunj/" },
+  { name: "Shweta's Makeover",                     city: "Chennai",   captain: "BHAVESH PANCHAL",   jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A", photo: "/teams/bhavesh-panchal.webp", ig: "https://www.instagram.com/shwetas_beauty_care_spa_/" },
+  { name: "Cutz Beauty Salon",                     city: "Delhi",     captain: "MEGHA BHATTI",      jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF", photo: "/teams/megha-bhatti.webp", ig: "https://www.instagram.com/cutz_salon_/" },
+  { name: "Elixir Salon",                          city: "Surat",     captain: "ANIL SITAPARA",     jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A", photo: "/teams/anil-sitapara.webp", ig: "https://www.instagram.com/elixirsalon.as/" },
+  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "CHIRAG LIMBACHIYA", jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF", photo: "/teams/chirag-limbachiya.webp", ig: "https://www.instagram.com/beyound_beauty_unisex_salon/" },
+  { name: "Rutpit The Alpit Sharma Salon",         city: "Jaipur",    captain: "ALPIT SHARMA",      jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" ,  photo: "/teams/4.webp" , ig: "https://www.instagram.com/rutpit_thealpitsharma_salon/" },
+  { name: "Dev's Ladies Salon",                    city: "Surat",     captain: "DEVANG KALOLA",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF", photo: "/teams/devang-kalola.webp", ig: "https://www.instagram.com/devs_ladiessalon_vadodara/" },
+  { name: "New Look Salon",                        city: "Pune",      captain: "PARESH LAKHTARIYA", jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: "/teams/paresh-lakhtariya.webp", ig: "https://www.instagram.com/the.newlooksalon/" },
+  { name: "Nitin's The Professional Salon",        city: "Vadodara",  captain: "NITIN LIMBACHIYA",  jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF", photo: "/teams/nitin-limbachiya.webp", ig: "https://www.instagram.com/nitinstheprofessionalsalon/" },
 
 ];
 
@@ -52,10 +73,17 @@ function TeamCard({ team }: { team: Team }) {
   const chipFg = isDark ? "#0A0A0A" : "#FFFFFF";
 
   return (
-    <div
-      className="relative overflow-hidden rounded-2xl shadow-card-elevated h-44 sm:h-48 group hover:scale-[1.02] transition-transform"
+    <a
+      href={team.ig}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block relative overflow-hidden rounded-2xl shadow-card-elevated h-44 sm:h-48 group hover:scale-[1.02] transition-transform"
       style={{ backgroundColor: team.bg, color: team.fg }}
     >
+
+
+
+      
       {/* Decorative starburst behind player */}
       <div
         aria-hidden
@@ -72,6 +100,7 @@ function TeamCard({ team }: { team: Team }) {
           WebkitMaskImage: "radial-gradient(circle, black 35%, transparent 70%)",
         }}
       />
+
 
      <img
   src={team.photo ?? captainPhoto}
@@ -94,7 +123,7 @@ function TeamCard({ team }: { team: Team }) {
       {/* Right side info */}
       <div className="relative h-full ml-[42%] pr-5 py-4 flex flex-col justify-center">
         {/* Top chip */}
-        <div
+        {/* <div
           className="inline-flex w-fit items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-bold"
           style={{ backgroundColor: chipBg, color: chipFg }}
         >
@@ -103,7 +132,7 @@ function TeamCard({ team }: { team: Team }) {
             style={{ backgroundColor: team.bg, border: `1.5px solid ${chipFg}` }}
           />
           Team #{team.jerseyNo}
-        </div>
+        </div> */}
 
         {/* Team name */}
         <h3
@@ -124,14 +153,17 @@ function TeamCard({ team }: { team: Team }) {
             <span className="font-bold" style={{ color: subtle }}>{team.city}</span>
           </div> */}
         </div>
-
-        {/* Pagination dots (decorative, IPL-style) */}
+ {/* Instagram icon */}
+        <div className="absolute bottom-3 right-5">
+          <Instagram className="h-4 w-4" style={{ color: subtle }} />
+        </div>
+        {/* Pagination dots (decorative, IPL-style)
         <div className="absolute bottom-3 right-5 flex gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: faint }} />
           <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: subtle }} />
-        </div>
+        </div> */}
       </div>
-    </div>
+    </a>
   );
 }
 

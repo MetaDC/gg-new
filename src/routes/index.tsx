@@ -9,7 +9,7 @@ import { Gallery } from "@/components/site/Gallery";
 import { RegisterCTA } from "@/components/site/RegisterCTA";
 import { Contact, Footer } from "@/components/site/Contact";
 import { Toaster } from "@/components/ui/sonner";
-import heroImg from "@/assets/hero-cricket.jpg";
+const heroImg = "/assets/hero-cricket.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,

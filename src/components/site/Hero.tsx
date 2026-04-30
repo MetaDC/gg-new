@@ -1,5 +1,5 @@
-import heroImg from "@/assets/hero-cricket.jpg";
-import logo from "@/assets/gg-logo.png";
+const heroImg = "/assets/hero-cricket.jpg";
+const logo = "/assets/gg-logo.webp";
 
 export function Hero() {
   return (
