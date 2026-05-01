@@ -210,7 +210,7 @@ export function Sponsors() {
                 n: "JK Agency",
                 s: "BEVERAGE PARTNER",
                 logo: kbjk,
-                href: "",
+                href: "https://www.instagram.com/kaavachbealeas/",
               },
              
               {

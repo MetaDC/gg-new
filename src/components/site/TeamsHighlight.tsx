@@ -33,18 +33,6 @@ type Team = {
 
 
 
-// https://www.instagram.com/allureandbeardstudio/
-// https://www.instagram.com/frenyzsalon/
-// https://www.instagram.com/reflexions_unisex_salon/
-// https://www.instagram.com/jawedhabibfatehgunj/
-// https://www.instagram.com/cutz_salon_/
-// https://www.instagram.com/elixirsalon.as/
-// https://www.instagram.com/beyound_beauty_unisex_salon/
-// https://www.instagram.com/rutpit_thealpitsharma_salon/
-// https://www.instagram.com/devs_ladiessalon_vadodara/
-// https://www.instagram.com/nitinstheprofessionalsalon/
-// https://www.instagram.com/the.newlooksalon/
-// https://www.instagram.com/shwetas_beauty_care_spa_/
 
 
 
@@ -52,14 +40,14 @@ type Team = {
 const teams: Team[] = [
   { name: "Allure And Beard Studio",               city: "Bengaluru", captain: "PROBAL SEN",        jerseyNo: "01", bg: "#0A0A0A", fg: "#FFFFFF", photo: "/teams/probal-sen.webp", ig: "https://www.instagram.com/allureandbeardstudio/" },
   { name: "Frenyz Couture and Salon",              city: "Vadodara",  captain: "FRENY CHAUHAN",     jerseyNo: "02", bg: "#E6188E", fg: "#FFFFFF", photo: "/teams/freny-chauhan.webp", ig: "https://www.instagram.com/frenyzsalon/" },
-  { name: "Reflexions Unisex Salon",               city: "Ahmedabad", captain: "RAJ SEN",    jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A", photo: "/teams/raj-sen.webp", ig: "https://www.instagram.com/reflexions_unisex_salon/" },
-  { name: "Jawed Habib Hair & Beauty",             city: "Mumbai",    captain: "MANISH MAKHIJA",    jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF", photo: "/teams/manish-makhija.webp", ig: "https://www.instagram.com/jawedhabibfatehgunj/" },
+  { name: "Reflexions Unisex Salon",               city: "Ahmedabad", captain: "RAJ SEN",    jerseyNo: "03", bg: "#C9CCCE", fg: "#0A0A0A", photo: "/teams/raj-sen.webp", ig: "https://www.instagram.com/raj.sen30?igsh=NHc2eTh0YjRqa2c1" },
+  { name: "Jawed Habib Hair & Beauty",             city: "Mumbai",    captain: "MANISH MAKHIJA",    jerseyNo: "04", bg: "#E0241F", fg: "#FFFFFF", photo: "/teams/manish-makhija.webp", ig: "https://www.instagram.com/jawedhabibfromvadodara?igsh=aXd6YzdkdTlvdmV5" },
   { name: "Shweta's Makeover",                     city: "Chennai",   captain: "BHAVESH PANCHAL",   jerseyNo: "05", bg: "#7B96B8", fg: "#0A0A0A", photo: "/teams/bhavesh-panchal.webp", ig: "https://www.instagram.com/shwetas_beauty_care_spa_/" },
-  { name: "Cutz Beauty Salon",                     city: "Delhi",     captain: "MEGHA BHATTI",      jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF", photo: "/teams/megha-bhatti.webp", ig: "https://www.instagram.com/cutz_salon_/" },
+  { name: "Cutz Beauty Salon",                     city: "Delhi",     captain: "MEGHA BHATTI",      jerseyNo: "06", bg: "#4B1F7A", fg: "#FFFFFF", photo: "/teams/megha.webp", ig: "https://www.instagram.com/cutz_salon_vadodara?igsh=MXMxMDJqYmxtczN5eQ==" },
   { name: "Elixir Salon",                          city: "Surat",     captain: "ANIL SITAPARA",     jerseyNo: "07", bg: "#F2D900", fg: "#0A0A0A", photo: "/teams/anil-sitapara.webp", ig: "https://www.instagram.com/elixirsalon.as/" },
-  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "CHIRAG LIMBACHIYA", jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF", photo: "/teams/chirag-limbachiya.webp", ig: "https://www.instagram.com/beyound_beauty_unisex_salon/" },
+  { name: "Beyound Beauty Unisex Salon & Academy", city: "Kolkata",   captain: "CHIRAG LIMBACHIYA", jerseyNo: "08", bg: "#1F5FB8", fg: "#FFFFFF", photo: "/teams/chirag.webp", ig: "https://www.instagram.com/beyound_beauty_unisex_salon/" },
   { name: "Rutpit The Alpit Sharma Salon",         city: "Jaipur",    captain: "ALPIT SHARMA",      jerseyNo: "09", bg: "#B49A86", fg: "#0A0A0A" ,  photo: "/teams/4.webp" , ig: "https://www.instagram.com/rutpit_thealpitsharma_salon/" },
-  { name: "Dev's Ladies Salon",                    city: "Surat",     captain: "DEVANG KALOLA",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF", photo: "/teams/devang-kalola.webp", ig: "https://www.instagram.com/devs_ladiessalon_vadodara/" },
+  { name: "Dev's Ladies Salon",                    city: "Surat",     captain: "DEVANG KALOLA",     jerseyNo: "10", bg: "#F08A1C", fg: "#FFFFFF", photo: "/teams/devang-kalola.webp", ig: "https://www.instagram.com/devs_ladiessalon?igsh=MXExdnM0dXFuM3Qz" },
   { name: "New Look Salon",                        city: "Pune",      captain: "PARESH LAKHTARIYA", jerseyNo: "11", bg: "#A6D8B0", fg: "#0A0A0A", photo: "/teams/paresh-lakhtariya.webp", ig: "https://www.instagram.com/the.newlooksalon/" },
   { name: "Nitin's The Professional Salon",        city: "Vadodara",  captain: "NITIN LIMBACHIYA",  jerseyNo: "12", bg: "#1F2A4A", fg: "#FFFFFF", photo: "/teams/nitin-limbachiya.webp", ig: "https://www.instagram.com/nitinstheprofessionalsalon/" },
 

@@ -1,7 +1,7 @@
 // Title Sponsor — dedicated dark-themed hero section for 3TENX
 import { ArrowUpRight, Trophy, Sparkles } from "lucide-react";
 const tenxLogo = "/assets/3tenx-logo.png";
-const tenxProducts = "/assets/3tenx-products.png";
+const tenxProducts = "/assets/3tenx-products.webp";
 
 function Streak({ className, color }: { className: string; color: string }) {
   return (

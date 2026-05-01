@@ -1,4 +1,4 @@
-const heroImg = "/assets/hero-cricket.jpg";
+const heroImg = "/assets/hero-cricket.webp";
 const logo = "/assets/gg-logo.webp";
 
 export function Hero() {
