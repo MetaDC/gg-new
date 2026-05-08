@@ -5,7 +5,7 @@ import { toast } from "sonner";
 const GOOGLE_SHEETS_URL =
   "https://script.google.com/macros/s/AKfycbxg-TkX_b2-zAbxHYquet0kFhYtpay0WbWYeOrF6uYSg1t2_mJiTIUDj4HoCgbBPRtxpg/exec";
 const MAILER_URL = "https://mailer-5x4h33dpla-uc.a.run.app/";
-const NOTIFY_EMAIL = ["aadil18122001@gmail.com"];
+const NOTIFY_EMAIL = ["gromminggurus@gmail.com"];
 // ──────────────────────────────────────────────────────────────────────────
 
 export function RegisterForm() {
