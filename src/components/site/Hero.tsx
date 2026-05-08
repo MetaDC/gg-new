@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 const heroImg = "/assets/hero-cricket.webp";
 const logo = "/assets/gg-logo.webp";
 
@@ -38,18 +40,20 @@ export function Hero() {
           Where the salon industry meets the cricket pitch. Registrations for 2026 are now closed but you can secure your spot for the 2027 edition today.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
-          <a
-            href="#register"
+          <Link
+            to="/"
+            hash="register"
             className="inline-flex items-center justify-center rounded-full bg-gradient-sunset px-8 py-4 text-base font-bold text-white shadow-primary hover:scale-105 transition-transform"
           >
             REGISTER FOR 2027
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/"
+            hash="about"
             className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-8 py-4 text-base font-semibold text-foreground hover:bg-white/10 transition-colors"
           >
             Learn More
-          </a>
+          </Link>
         </div>
 
         <div className="mt-16 grid grid-cols-3 gap-4 max-w-2xl mx-auto">

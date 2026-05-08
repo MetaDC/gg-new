@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 const logo = "/assets/gg-logo.webp";
 
 const NAV_LINKS = [
-  { href: "#about", label: "ABOUT" },
-  { href: "#title-sponsor", label: "SPONSORS" },
-  { href: "#highlights", label: "HIGHLIGHTS" },
-  { href: "#gallery", label: "GALLERY" },
-  { href: "#contact", label: "CONTACT" },
+  { to: "/", hash: "about", label: "ABOUT" },
+  { to: "/", hash: "title-sponsor", label: "SPONSORS" },
+  { to: "/", hash: "highlights", label: "HIGHLIGHTS" },
+  { to: "/", hash: "gallery", label: "GALLERY" },
+  { to: "/", hash: "contact", label: "CONTACT" },
 ];
 
 export function Navbar() {
@@ -17,18 +17,23 @@ export function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-navy-deep/70 backdrop-blur-md border-b border-white/5">
       <div className="container-page flex items-center justify-between h-16">
-        <a href="#top" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <img src={logo} alt="Logo" className="h-12 w-12" />
           <span className="font-display tracking-widest text-sm sm:text-base text-foreground">
             GROOMING GURUS
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           {NAV_LINKS.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-primary transition-colors">
+            <Link
+              key={l.label}
+              to={l.to as "/"}
+              hash={l.hash}
+              className="hover:text-primary transition-colors"
+            >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -56,14 +61,15 @@ export function Navbar() {
         <nav className="md:hidden border-t border-white/5 bg-navy-deep/95 backdrop-blur-md">
           <div className="container-page py-4 flex flex-col gap-1">
             {NAV_LINKS.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
+              <Link
+                key={l.label}
+                to={l.to as "/"}
+                hash={l.hash}
                 onClick={() => setOpen(false)}
                 className="px-2 py-3 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
             <Link
               to="/register"

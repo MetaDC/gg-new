@@ -25,21 +25,23 @@ export function RegisterCTA() {
           >
             REGISTER FOR 2027 →
           </Link>
-          <a
-            href="#contact"
+          <Link
+            to="/"
+            hash="contact"
             className="group relative inline-flex items-center justify-center rounded-full bg-gradient-gold px-8 py-4 text-base font-bold text-navy-deep shadow-gold hover:scale-[1.03] transition-transform"
           >
             <span className="absolute -top-2 -right-2 rounded-full bg-primary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white shadow-primary animate-pulse">
               Open
             </span>
             ★ BECOME A SPONSOR
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/"
+            hash="contact"
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-4 text-base font-semibold text-foreground hover:border-primary/60 transition-colors"
           >
             Talk to Us
-          </a>
+          </Link>
         </div>
       </div>
 
