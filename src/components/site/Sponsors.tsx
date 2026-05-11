@@ -208,7 +208,7 @@ export function Sponsors() {
                 href: "https://www.instagram.com/dr_sonis?igsh=MXMxbnl3aHFlang3NA==",
               },  {
                 n: "Vendor",
-                s:"Vendor Support       Partner",
+                s:"Vendor Support Partner",
                 logo: vendor,
                 href: "https://www.instagram.com/dr_sonis?igsh=MXMxbnl3aHFlang3NA==",
               },
@@ -228,8 +228,8 @@ export function Sponsors() {
             ] as { n: string; s: string; logo?: string; href: string }[]
           ).map((p) => (
             <div key={p.n} className="w-[calc(50%-1.25rem)] md:w-[calc(25%-1.25rem)] lg:w-[calc(20%-1.25rem)] text-center">
-              <p className="text-[10px] sm:text-xs tracking-[0.25em] font-bold text-navy-deep mb-3 whitespace-pre-line uppercase">
-                {p.s.replace(/ PARTNER/i, "\nPARTNER")}
+              <p className="text-[10px] sm:text-xs tracking-[0.25em] font-bold text-navy-deep mb-3">
+                {p.s}
               </p>
               <LogoTile name={p.n} logo={p.logo} href={p.href} />
             </div>
