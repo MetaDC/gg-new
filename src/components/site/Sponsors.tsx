@@ -16,6 +16,7 @@ const travel = "/assets/sponsor/travelcuratorpartner/Tripotel.png";
 const digitales = "/assets/sponsor/digitalpartner/gs.png";
 const entertainment = "/assets/sponsor/entertainment/vc-live-logo.png";
 const diwizonLogo = "/assets/sponsors/diwizon.png";
+const vendor = "/assets/sponsor/vendor/ar-ma-logo.png";
 
 const test = "/assets/sponsors/test-1.png";
 
@@ -167,7 +168,7 @@ export function Sponsors() {
         <div className="mx-auto my-14 h-px max-w-5xl bg-navy/10" />
 
         {/* Associate & other partners */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5">
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-10">
           {(
             [
               {
@@ -205,6 +206,11 @@ export function Sponsors() {
                 s:"ASSOCIATE PARTNER",
                 logo: associate2,
                 href: "https://www.instagram.com/dr_sonis?igsh=MXMxbnl3aHFlang3NA==",
+              },  {
+                n: "Vendor",
+                s:"Vendor Support       Partner",
+                logo: vendor,
+                href: "https://www.instagram.com/dr_sonis?igsh=MXMxbnl3aHFlang3NA==",
               },
               {
                 n: "JK Agency",
@@ -221,9 +227,9 @@ export function Sponsors() {
               },
             ] as { n: string; s: string; logo?: string; href: string }[]
           ).map((p) => (
-            <div key={p.n} className="text-center">
-              <p className="text-[10px] sm:text-xs tracking-[0.25em] font-bold text-navy-deep mb-3">
-                {p.s}
+            <div key={p.n} className="w-[calc(50%-1.25rem)] md:w-[calc(25%-1.25rem)] lg:w-[calc(20%-1.25rem)] text-center">
+              <p className="text-[10px] sm:text-xs tracking-[0.25em] font-bold text-navy-deep mb-3 whitespace-pre-line uppercase">
+                {p.s.replace(/ PARTNER/i, "\nPARTNER")}
               </p>
               <LogoTile name={p.n} logo={p.logo} href={p.href} />
             </div>
